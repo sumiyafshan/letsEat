@@ -1,0 +1,21 @@
+
+label{
+    padding-left: 15px;
+    margin-bottom: 8px;
+    font-size: large;
+    font-weight: 100;
+  }
+h3{
+    text-align: center;
+  }
+  
+.box{
+      background-color: rgb(234, 145, 145);
+      margin-left: 350px;
+      margin-top: 5px;
+      height: 450px;
+      width: 800px;
+      padding: 25px;
+      padding-right: 40px;
+      box-shadow: 5px 5px 20px ,#383838;
+  }

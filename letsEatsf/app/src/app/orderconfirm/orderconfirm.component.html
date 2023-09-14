@@ -1,0 +1,31 @@
+<div class="page">
+<div class="container">
+<div class="form">
+    <form #form1="ngForm">
+      
+        <h4>Thank you for your order</h4>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="label">Item</label>
+            <input type="text" class="form-control" name="fooditem"  id="exampleInputPassword1"  [(ngModel)]="x.data.fooditem">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="label" > Shipping address</label>
+            <input type="textarea" class="form-control"name="address" id="exampleInputPassword1"  ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="label">Count</label>
+            <input type="number" class="form-control" name="quantity" id="exampleInputPassword1" #count (change)="calcPrice(count.value)" ngModel>
+          </div><div class="mb-3">
+            <label for="exampleInputPassword1" class="label">Total payment</label>
+            <input type="number" class="form-control"name="payment" id="exampleInputPassword1" [(ngModel)]="this.data2.totalprice" [ngModel]>
+          </div>
+         
+       
+        <button type="button" class="butn" (click)="confirm(form1.value)">Net payment</button>
+        <button   class="butn" >back</button>
+</form>
+</div>
+</div>
+
+</div>
+<router-outlet></router-outlet>

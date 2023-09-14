@@ -1,0 +1,16 @@
+<form #form1="ngForm">
+    <div class="body">
+    <div class="box">
+        <h5>SIGNUP</h5>
+
+    <input type="text" name="name"   style="margin-bottom: 7px;"placeholder="Name" required  ngModel>
+    <input type="text" name="location"  style="margin-bottom: 7px;" placeholder="location"  ngModel ><br>
+    <input type="textarea" name="address" style="margin-bottom: 7px;" placeholder="address" ngModel><br>
+    <input type="text" name="email"  style="margin-bottom: 5px;"placeholder="Email" ngModel><br>
+    <input type="password" name="password"  style="margin-bottom: 40px;" placeholder="password" ngModel><br>
+
+    <button type="button" class="btn btn-secondary" style="margin-left: 60px;padding-left: 0px;" (click)="reg(form1.value)">Go</button>    
+    <button type="button" class="btn btn-secondary"style="margin-left: 70px;">Help</button>
+    <button type="button"class="btn btn-secondary"style="margin-left: 80px;">Back</button>
+        
+</div>

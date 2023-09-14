@@ -1,0 +1,30 @@
+.container{
+    position: relative;
+    background-color: rgb(247, 244, 242);
+    margin: 20px;
+    margin-left: 150px;
+    margin-top: 10px; 
+    height: 500px; 
+    width: 350px; 
+    border-radius: 10px;
+    /* top: 5px; */
+  
+}
+   
+ h1,h4{
+    text-align: center;
+    font-family: fantasy;
+}
+.btn{ 
+  background-color:   #e46140;
+  margin-top: 30px;
+  width: 320px ;
+  margin-bottom: 10px;
+ } 
+.para{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+   
+    

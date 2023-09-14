@@ -1,0 +1,29 @@
+.box{
+    position: relative;
+    top: 60px;
+    background-color: #ffb4a2;
+    margin-left: 50px;
+    height: 350px;
+    width: 500px;
+    padding: 25px;
+    padding-right: 40px;
+    box-shadow: 5px 5px 20px ,#0f0f0f;
+    border-radius: 25px;
+}
+h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    font-family: sans-serif;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 50px;
+}
+button{
+    width: 140px;
+    background-color: #0f0f0f;
+    margin-left: 180px;
+    top: 5px;
+    }

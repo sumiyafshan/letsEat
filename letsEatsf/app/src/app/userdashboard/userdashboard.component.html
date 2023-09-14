@@ -1,0 +1,21 @@
+<div class="page">
+   <div class="">
+
+  <div class="boxmain">
+   <div *ngFor="let item of (data.data)">
+      <div class="box1">
+         <div class="item">{{item.fooditem}}<br/>&#8377; {{item.price}}</div>
+         <div class="item"> {{item.category}}</div>
+         <!-- <div class="item"> {{item.quantity}}</div> -->
+         <div class="item"></div>
+         <div class="item">
+            <button type="button" class="orderbtn" (click)="order(item.fooditem)">
+               order now
+            </button>
+         </div>
+      </div>
+   </div>
+  </div>
+   </div>
+</div>
+<router-outlet></router-outlet>

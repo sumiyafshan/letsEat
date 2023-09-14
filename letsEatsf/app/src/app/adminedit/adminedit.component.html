@@ -1,0 +1,16 @@
+<div class="box">
+    <h3>update new dtaaa</h3>
+    <form #form1="ngForm">
+        <label for="fooditem" >Food item</label>
+            <input type="text" required name="fooditem" class="form-control" #fooditem  [(ngModel)]="data.data.fooditem" ><br>
+            <label for="category">Category</label>
+            <input type="radio" name="category" value="on"  #category  ngModel >Veg
+            <input type="radio" name="category" value="on" #category >Non-Veg<br>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity"style=""class="form-control" #quantity  [(ngModel)]="data.data.quantity"><br>
+            <label for="price">Price</label>
+            <input type="number" name="price"style=""class="form-control"  #price  [(ngModel)]="data.data.price"><br> 
+            <button type="submit" (click)="updt(form1.value)">update</button>
+    </form>
+<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <form #form1="ngForm">
+    <div class="row">
+      <div class="col">
+        <h4>Welcome to</h4>
+        <h1>TASTYFOOD</h1>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" ngModel>
+          <label for="floatingInput">Enter your email</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" ngModel>
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="para">
+          <p>Forget Password?</p>
+        </div>
+        <button type="button" class="btn" (click)="call(form1.value)">Sign In</button>
+       
+        <div><p>Don't have an account?<a routerLink="../userregister">click here</a></p></div>
+          <span> <hr>Or connect with</span>
+        
+      </div>
+    </div>
+ 
+  </form>
+
+ 
+ <router-outlet></router-outlet>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+    
+    
+    
+    
+    
+    
+    
+     
+    

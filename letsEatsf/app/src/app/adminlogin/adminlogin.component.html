@@ -1,0 +1,15 @@
+
+    <div class="box">
+        <form #form1="ngForm" >
+            <h1>Admin Panel</h1>
+        <label for="username" >Username</label><br>
+        <input type="text" name="username"style="margin-bottom: 5px;height:25px;margin-left:50px;width:250px"class="form-control" #username  ngModel ><br>
+        <label for="password">Password</label><br>
+        <input type="text" name="password"style="margin-bottom: 40px;height:25px;margin-left:50px;width:250px"class="form-control" #password  ngModel ><br>
+    
+        <button type="button" class="btn btn-primary" style="height: 40px;width: 80px;" (click)="check(username.value,password.value)">Login</button>    
+    </form>  
+    </div>   
+   
+
+<router-outlet></router-outlet>

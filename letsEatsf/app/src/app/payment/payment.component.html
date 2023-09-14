@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="box">
+    <form  #form1="ngForm">
+      <h5>Payment Details</h5>
+   <div class="btn1"> <button type="button" >GPay</button>
+   <button>Cash on Delivery</button></div>  
+        <label>Card id</label><input type="number" name="card" placeholder="enter your 12digit code"  ngModel><br>
+        <label>Expiration</label><input type="month"   name="expire"  ngModel>
+        <label>CVV no</label><input type="number"   name="cvv"  ngModel>
+      <div>  <button type="button" (click)="pay()" >pay now</button></div>
+    </form>
+</div>
+    <router-outlet></router-outlet>
+</div>

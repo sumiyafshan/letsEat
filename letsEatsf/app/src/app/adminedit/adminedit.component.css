@@ -1,0 +1,12 @@
+.box{
+    position: relative;
+    top: 20px;
+    background-color: #ffb4a2;
+    margin-left: 350px;
+    height: 400px;
+    width: 500px;
+    padding: 25px;
+    padding-right: 40px;
+    box-shadow: 5px 5px 20px ,#0f0f0f;
+    border-radius: 25px;
+}

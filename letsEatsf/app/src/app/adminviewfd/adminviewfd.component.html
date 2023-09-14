@@ -1,0 +1,19 @@
+<div class="box">
+    <table>
+        <th>Food Item</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    <tr *ngFor="let item of (data.data)">
+    
+        <td>{{item.fooditem}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price}}</td>
+    
+        <td> <button type="submit"class="btn btn-danger" style="margin-left: 20px;"(click)=edt(item._id)>Edit</button></td> 
+        <td> <button type="submit"class="btn btn-danger" style="margin-left: 20px;" (click)="del(item.food)" >Delete</button></td>
+    </table>
+       <router-outlet></router-outlet>
+    </div>
+ 

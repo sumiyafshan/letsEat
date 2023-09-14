@@ -1,0 +1,20 @@
+<div class="box">
+    <form #form1 ="ngForm" >
+        <h3>ADD FOOD DETAILS</h3>
+            <label for="fooditem" >Food item</label>
+            <input type="text" required name="fooditem" class="form-control" #fooditem   ngModel >
+            <input type="file" name="img" #img ngModel><br>
+            <label for="category">Category</label>
+            <input type="radio" name="category" value="on"  #category  ngModel >Veg
+            <input type="radio" name="category" value="on" #category >Non-Veg<br>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity"style=""class="form-control" #quantity ngModel><br>
+            <label for="price">Price</label>
+            <input type="number" name="price"style=""class="form-control"  #price ngModel><br>
+           
+        <button type="submit" class="btn btn-secondary"  style="margin-left: 80px;height: 40px;width: 150px;" (click)="add(form1.value)">Add</button>    
+        <button type="button"class="btn btn-secondary"style="margin-left: 80px;height: 40px;width: 100px;top:60px" >Back</button>
+    </form>
+    </div>
+    
+    
